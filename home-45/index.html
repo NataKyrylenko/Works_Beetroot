@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue home work</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body class="p-5">
+    <div id="app1" class="container p-3 border border-3 rounded-3 text-center">
+        <h2 class="text-warning">Task 1</h2>
+        <div class="bg-color" :style="{ backgroundColor: backgroundColor}"> 
+            <input type="text" class="form-control mb-3" placeholder="Enter color"
+            v-bind:value="bgColor"
+            v-on:input="changeColor" 
+            >
+            <button @click="changeColor">Change color</button>
+            <p class="fs-2 text-info">Your body color: {{bgColor}}</p> 
+           </div>
+    </div>
+
+    <div id="app2" class="container p-3 border border-3 rounded-3 text-center mt-5" >
+        <h2 class="text-warning mb-3">Task 2</h2>
+        <div class="row">
+        <div class="col-6">
+            <p>Pressed mouse button: {{ showButton}}</p>
+            <button type="button" class="btn btn-info" v-on:click.right="activeButton" v-on:click.left="activeButton">Show button</button>
+          </div>
+          <div class="col-6">
+            <p>Time now: {{ date }}</p>
+            <button type="button" class="btn btn-info" v-on:click="showTime">Show time</button>
+          </div>
+        <p class="fs-2 text-info"></p>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        let myApp1 = new Vue({
+            el: '#app1',
+            data() {
+            return {
+                bgColor: '',
+            }
+        },
+        computed: {
+            backgroundColor() {
+                return this.bgColor;
+            }
+        },
+        methods: {
+            changeColor() {
+                this.bgColor = event.target.value;
+                document.body.style.backgroundColor = this.bgColor;
+                // this.bgColor = ''
+            },  
+        }
+        })
+
+        let myApp2 = new Vue({
+            el: '#app2',
+            data() {
+            return {
+                showButton: '',
+                date: "",
+
+            }
+           
+         },
+        methods: {
+            activeButton(){
+                 console.log(event.button);     
+                 event.preventDefault();           
+                if (event.button === 0){
+                    alert('Pressed left mouse button ');
+                     this.showButton = 'left';
+                }
+                else if (event.button === 2){
+                    alert('Pressed right mouse button');
+                    this.showButton = 'right';
+                }
+            },
+            showTime(){
+                this.date = new Date().toLocaleTimeString();
+            }
+        },
+        
+        })
+
+
+    </script>
+</body>
+</html>

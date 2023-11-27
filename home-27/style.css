@@ -1,0 +1,20 @@
+.section{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.input{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.button{
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(228, 228, 230);
+    width: 50%;
+    border-radius: 5px;
+    margin: 10px;
+
+}

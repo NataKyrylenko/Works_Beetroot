@@ -1,0 +1,104 @@
+.btn {
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+  background-color: #ff9900;
+  font-weight: 600;
+  color: #ffff;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  cursor: pointer;
+
+  @media screen and (max-width: $md) {
+    max-width: 400px;
+  }
+}
+
+.menu {
+  &__button-link {
+    margin: 15px 0;
+    padding: 10px 22px;
+    width: 110px;
+    height: 46px;
+
+    @media screen and (max-width: $md) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: $md) {
+      margin: 15px 5px;
+    }
+
+    &_signin {
+      width: 102px;
+      color: #173a56;
+      background-color: #ffffff;
+      border: 1px solid #bcd0e5;
+
+      @media screen and (max-width: $md) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.banner {
+  &__button {
+    display: inline;
+    padding: 15px 41px 14px;
+    width: 93px;
+    height: 24px;
+    font-weight: 700;
+  }
+}
+
+.feature {
+  &__button {
+    width: 175px;
+    height: 53px;
+    text-align: center;
+    font-weight: 700;
+    padding: 15px 32px 14px 34px;
+    line-height: 24px;
+    margin: 0 auto;
+  }
+}
+.header {
+  &__button {
+    display: none;
+    flex-wrap: wrap;
+
+    .munu__open & {
+      display: flex;
+    }
+
+    @media screen and (max-width: $md) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (min-width: $md) {
+      display: flex;
+    }
+  }
+}
+.footer {
+  &__button {
+    width: 131px;
+    height: 39px;
+    padding: 8px 15px 7px 15px;
+    border-style: none;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  &__field {
+    margin-top: 91px;
+    margin-bottom: 21px;
+    border-radius: 4px;
+    width: 325px;
+    height: 48px;
+    border: 1px solid #bcd0e5;
+    background: #ffffff;
+  }
+}

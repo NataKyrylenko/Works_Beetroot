@@ -1,0 +1,23 @@
+.menu {
+  &__hamburger {
+    font-size: 26px;
+    color: #ff9900;
+    border: 1px solid #ff9900;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    position: absolute;
+    top: 25px;
+    right: 0;
+
+    &:hover {
+      color: #157ffb;
+      border: 1px solid #157ffb;
+    }
+
+    @media screen and(min-width: $md) {
+      display: none;
+    }
+  }
+}

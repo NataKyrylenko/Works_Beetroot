@@ -1,0 +1,62 @@
+@mixin name {
+  font-size: 36px;
+  font-family: "roboto", sans-serif;
+  line-height: 24px;
+  color: $name;
+}
+@mixin work {
+  font-size: 24px;
+  font-family: "raleway", sans-serif;
+  line-height: 36px;
+  font-weight: 300;
+  color: $name;
+}
+@mixin text {
+  font-size: 14px;
+  font-family: "raleway", sans-serif;
+  line-height: 24px;
+  font-weight: 500;
+  color: $name;
+}
+.info {
+  width: 42%;
+  height: 42%;
+  padding: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__name {
+    @include name;
+    padding: 15px 0 30px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 30%;
+      width: 40%;
+      height: 1px;
+      background: $orange;
+    }
+  }
+  &__work {
+    @include work;
+    margin: 30px 0;
+  }
+  &__text {
+    @include text;
+    padding: 30px 0 25px;
+    position: relative;
+    &::after {
+      content: "\2014";
+      color: $orange;
+      position: absolute;
+      font-size: 30px;
+      bottom: 0;
+      left: 47%;
+    }
+  }
+}

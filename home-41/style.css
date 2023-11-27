@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: grey;
+  font-family: "Neue Hans Kendrick", sans-serif;
+}
+section {
+  width: 1700px;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: 150px;
+}
+.container-first {
+  padding: 83px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 53px 57px;
+}
+.container-first img:hover {
+  transform: scale(1.2);
+}
+.first-item {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.container-second {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+/* ---------------------------------------- */
+.second-sect {
+  background-color: #e2e7ec;
+}
+
+.wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 90px 0 100px;
+}
+.cards {
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+}
+.card-first {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.card__content-first {
+  margin-top: -130px;
+  color: white;
+  padding: 0 155px 0 40px;
+}
+.content__text {
+  color: #8e8b81;
+  font-size: 13px;
+  line-height: 35px;
+}
+.content__title-first {
+  font-size: 30px;
+  line-height: 36px;
+}
+.card__content {
+  background-color: white;
+  padding: 30px 20px;
+}
+.content__title {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 70px;
+}

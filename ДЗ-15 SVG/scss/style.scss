@@ -1,0 +1,145 @@
+@import "_reset.scss";
+@mixin text {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+@mixin pretitle {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 21px;
+}
+@mixin logo-title {
+  font-family: Quicksand;
+
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 35px;
+}
+.header .section {
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.wrapper {
+  max-width: 1158px;
+  padding: 35px 0;
+  margin: 0 auto;
+}
+.logo-header {
+  height: 80px;
+  border-bottom: 1px solid #efeef3;
+  &__link {
+    display: inline-flex;
+    align-items: center;
+  }
+  &__pic {
+    width: 26px;
+    height: 26px;
+    margin-right: 14px;
+  }
+  &__title {
+    @include logo-title;
+    color: #16133d;
+  }
+}
+.desc {
+  &__text {
+    @include text;
+    color: #7690a8;
+  }
+  &__title {
+    font-family: Nunito Sans;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+  }
+}
+.container {
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.container-item {
+  max-width: 360px;
+  padding: 41px;
+  border: 1px solid #e5eaf4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 7px;
+  &:hover {
+    border: 1px solid #3db370;
+  }
+  &__title {
+    @include pretitle;
+    color: #16133d;
+    margin: 28px 0 14px;
+  }
+  &__text {
+    @include text;
+    color: #16133d;
+    margin-bottom: 29px;
+  }
+}
+.container-item-icon {
+  width: 68px;
+  height: 68px;
+  border: 1px solid rgba(21, 101, 216, 0.1);
+  border-radius: 16px;
+  position: relative;
+  &__pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:hover {
+    stroke: #3db370;
+  }
+}
+.footer {
+  background: #16133d;
+}
+.logo-footer {
+  height: 80px;
+  &__link {
+    display: inline-flex;
+    align-items: center;
+  }
+  &__pic {
+    width: 26px;
+    height: 26px;
+    margin-right: 14px;
+  }
+  &__title {
+    @include logo-title;
+    color: white;
+  }
+}
+.social-icons {
+  display: flex;
+  padding-bottom: 10px;
+  &__link {
+    background: #efeef3;
+    border-radius: 5px;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    position: relative;
+  }
+  &__pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    &:hover {
+      fill: #3db370;
+    }
+  }
+}

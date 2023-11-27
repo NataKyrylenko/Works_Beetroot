@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="body">
+    <section class="forms">
+        <div class="forms-inner">                 
+                <h1 class="forms__title">Create an Account</h1>           
+            
+                <div class="forms-item">
+                <label class="forms-item__label" for="name">First Name
+                    <input class="forms-item__input_short" type="text">
+                </label>
+                <label class="forms-item__label" for="name">Last Name
+                    <input class="forms-item__input_short" type="text">
+                </label>
+            </div>
+
+            <div class="forms-item">
+                <label class="forms-item__label" for="email">E-mail
+                    <input class="forms-item__input_long" type="email">
+                </label>
+                <p class="forms-item__text">We'll never share your email with anyone else.</p>
+            </div>
+
+            <div class="forms-item">               
+                <label class="container">Male
+                    <input class="check" type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Female
+                    <input class="check" type="radio" name="radio">
+                    <span class="checkmark"></span>
+                  </label>               
+            </div>
+
+            <div class="forms-item">
+                <label class="forms-item__label" for="name">Country
+                    <select class="forms-item__input_short" placeholder="Select"> 
+                    </select>
+                </label>
+                <label class="forms-item__label" for="name">City
+                    <input class="forms-item__input_short" type="text">
+                </label>
+            </div> 
+
+            <div class="forms-item">
+            <p class="forms-item__text_center">By clicking the 'Sign Up' button, you confirm that you accept our <a class="forms-item__text_link" href="#">Terms of Use</a>
+                and <a class="forms-item__text_link" href="#"> Privacy Policy</a>.</p>
+             </div>
+             <div class="forms-item"><hr class="forms-item__line"></div>
+             <div class="forms-item">
+                <p class="forms-item__footer-text">Have an account? <a class="forms-item__text_link" href="#">Log In</a></p>
+            </div> 
+        </div>
+    </section>
+</body>
+</html>

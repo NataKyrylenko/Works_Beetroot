@@ -1,0 +1,40 @@
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1065px;
+  margin: 0 auto;
+  &__col {
+    width: 33%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0;
+  }
+}
+.price {
+  &__rate {
+    font-family: $primary-font;
+    font-size: $big-size;
+    color: $general-color;
+    font-weight: 100;
+    &::before {
+      content: "\0024";
+      font-size: $title-size;
+      line-height: $line-height;
+      vertical-align: super;
+    }
+    &::after {
+      content: "/HR";
+      font-size: $text-size;
+      line-height: $line-height;
+    }
+  }
+  &__position {
+    font-family: $primary-font;
+    font-size: $title-size;
+    font-weight: 100;
+    line-height: $line-height;
+    margin-bottom: 70px;
+  }
+}

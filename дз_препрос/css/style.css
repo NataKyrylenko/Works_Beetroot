@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+section {
+  max-width: 1500px;
+  width: 100%;
+  margin: 110px auto;
+}
+section .container {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+section .container .caption {
+  max-width: 570px;
+  margin: 0 auto;
+  text-align: center;
+}
+section .container .caption h1 {
+  font-size: 34px;
+}
+section .container .caption p {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 60px 0;
+}
+section .container .cards {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section .container .cards .userpic {
+  max-width: 270px;
+  max-height: 325px;
+  margin-right: 30px;
+  position: relative;
+}
+section .container .cards .userpic img {
+  width: 100%;
+  height: 70%;
+}
+section .container .cards .userpic .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50px, -50px);
+          transform: translate(-50px, -50px);
+  opacity: 0;
+}
+section .container .cards .userpic .icon i {
+  width: 42px;
+  height: 42px;
+  background-color: #5ecbe7;
+}

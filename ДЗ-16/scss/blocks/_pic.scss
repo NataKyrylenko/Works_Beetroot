@@ -1,0 +1,49 @@
+.photo {
+  padding: 22px;
+
+  width: 43%;
+  background-image: linear-gradient(
+      to right,
+      $orange 100px,
+      transparent 100px,
+      transparent 320px,
+      $orange 320px
+    ),
+    linear-gradient(
+      to right,
+      $orange 100px,
+      transparent 100px,
+      transparent 320px,
+      $orange 320px
+    ),
+    linear-gradient(
+      to bottom,
+      $orange 100px,
+      transparent 100px,
+      transparent 320px,
+      $orange 320px
+    ),
+    linear-gradient(
+      to bottom,
+      $orange 100px,
+      transparent 100px,
+      transparent 320px,
+      $orange 320px
+    );
+  background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%;
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-repeat: no-repeat;
+
+  &__pic {
+    border: 1px solid $orange;
+    max-width: 100%;
+  }
+}
+.social-icons__pic {
+  width: 30px;
+  height: 30px;
+  fill: $icon;
+  &:hover {
+    fill: $orange;
+  }
+}

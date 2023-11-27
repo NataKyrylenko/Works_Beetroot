@@ -1,0 +1,116 @@
+.banner {
+  margin: 10px auto;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__div {
+    width: 45%;
+    min-width: $xs;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: #2f281e;
+    margin-bottom: 30px;
+    padding: 5px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  &__image {
+    width: 55%;
+    object-fit: cover;
+  }
+}
+
+.feature {
+  padding-left: 10px;
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #2f281e;
+    margin: 110px auto 45px;
+    padding: 5px;
+    max-width: 540px;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+
+  &__content-col {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+  }
+
+  &__content-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__content-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #2f281e;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 13px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 230px;
+  padding-left: 10px;
+
+  &_margin {
+    margin-top: 140px;
+  }
+
+  &__div {
+    width: 43%;
+    min-width: $xs;
+  }
+
+  &__text {
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    color: #2f281e;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #2f281e;
+    margin-bottom: 22px;
+  }
+
+  &__image {
+    width: 44%;
+    object-fit: cover;
+  }
+  &__box-text {
+    margin: 0 10px 5px;
+    padding: 10px;
+    list-style-image: url("/img/icon5.svg");
+    list-style-position: outside;
+  }
+}
